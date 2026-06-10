@@ -1,0 +1,501 @@
+{
+  "generatedAt": "2026-06-10T09:16:41.067Z",
+  "model": "gpt-5.4-mini",
+  "summaries": [
+    {
+      "id": "otm-19680079",
+      "headline": "Central Salford 1-bed apartment",
+      "summary": "One-bedroom leasehold apartment in Bridgewater Gate, Salford, listed at £130,000. This is in line with the Manchester 1-bed cohort median, so pricing looks typical rather than discounted.",
+      "pros": [
+        "250 years remaining on lease",
+        "Fantastic location",
+        "Great transport links",
+        "Cash buyers only"
+      ],
+      "watchouts": [
+        "Cash buyers only",
+        "Confirm lease terms and service charges",
+        "Check condition and rental potential"
+      ],
+      "valueVerdict": "At cohort median, fair value",
+      "valueScore": 50
+    },
+    {
+      "id": "otm-19680055",
+      "headline": "Low-priced Manchester leasehold flat",
+      "summary": "Two-bed leasehold apartment in Manchester listed at £152,000. This is well below the cohort median asking price of £215,000, so it looks competitively priced versus similar listings.",
+      "pros": [
+        "118 years remaining on lease",
+        "Secure fob entry",
+        "Next to Oxford Road bus links"
+      ],
+      "watchouts": [
+        "Leasehold terms and service charges",
+        "Confirm condition and layout",
+        "Check exact location and access"
+      ],
+      "valueVerdict": "Well below cohort median",
+      "valueScore": 79
+    },
+    {
+      "id": "otm-19679438",
+      "headline": "Chain-free Salford apartment, median priced",
+      "summary": "2-bed, 2-bath apartment in Salford asking £215,000. This matches the Manchester 2-bed cohort median, so it is priced in line with the dataset rather than offering a discount.",
+      "pros": [
+        "24/7 concierge reception",
+        "Great transport links",
+        "Chain-free",
+        "239 years lease remaining"
+      ],
+      "watchouts": [
+        "Leasehold tenure",
+        "Check service charges",
+        "Confirm exact location and commute"
+      ],
+      "valueVerdict": "At cohort median, fair value",
+      "valueScore": 50
+    },
+    {
+      "id": "otm-19679295",
+      "headline": "City Centre Leasehold Apartment",
+      "summary": "Two-bedroom, two-bath apartment on the 10th floor at One Regent, Manchester. At £230,000, it sits about £5,000 above the £215,000 median for 2-bed sales in this dataset, so it is slightly above cohort pricing.",
+      "pros": [
+        "241 years remaining on lease",
+        "24/7 concierge reception",
+        "Walking distance to Salford University",
+        "Walking distance to city centre"
+      ],
+      "watchouts": [
+        "Leasehold terms and service charges",
+        "High-floor access/ lift reliability",
+        "Check exact size and condition"
+      ],
+      "valueVerdict": "Slightly above median",
+      "valueScore": 47
+    },
+    {
+      "id": "otm-19685500",
+      "headline": "M14 furnished 3-bed flat",
+      "summary": "Three-bedroom flat in Manchester M14 to rent at £2,015 pcm, exactly in line with the cohort median for 3-bed rentals in Manchester. Furnished and marked as suitable for students, with a station about 0.8 miles away and a school about 0.3 miles away.",
+      "pros": [
+        "Furnished",
+        "Student",
+        "Nearest station 0.8mi.",
+        "Nearest school 0.3mi."
+      ],
+      "watchouts": [
+        "Check tenancy terms for student lets",
+        "Confirm transport links at 0.8 miles",
+        "Assess room sizes and layout"
+      ],
+      "valueVerdict": "At cohort median, fair value",
+      "valueScore": 50
+    },
+    {
+      "id": "otm-17154458",
+      "headline": "Four-bed furnished student terrace",
+      "summary": "Four-bedroom terraced house to rent in Eccles, M30, with two bathrooms and 882 sq ft of floor area. At £1,907 pcm, it sits below the Manchester 4-bed rent median of £2,167 pcm, so it is cheaper than the typical comparable listing.",
+      "pros": [
+        "Below cohort median rent",
+        "Furnished",
+        "Nearest station 0.7mi.",
+        "Nearest school 0.3mi."
+      ],
+      "watchouts": [
+        "Student let",
+        "Compact at 882 sq ft",
+        "Check condition and layout"
+      ],
+      "valueVerdict": "Below median, decent value",
+      "valueScore": 61
+    },
+    {
+      "id": "otm-16486473",
+      "headline": "Manchester 4-bed terraced student let",
+      "summary": "Four-bedroom terraced house in Manchester M14, offered furnished and aimed at students. At £2,167 pcm, it is exactly in line with the cohort median for 4-bed rentals in Manchester.",
+      "pros": [
+        "1,011 sq ft floor area",
+        "Furnished",
+        "Nearest school 0.2mi.",
+        "Student"
+      ],
+      "watchouts": [
+        "Only 1 bathroom",
+        "Nearest station 1.3mi.",
+        "Check student tenancy terms"
+      ],
+      "valueVerdict": "At median, fair value",
+      "valueScore": 50
+    },
+    {
+      "id": "otm-18044478",
+      "headline": "3-bed furnished terrace, below median",
+      "summary": "Three-bedroom terraced house to rent in Eccles, M30, with 2 bathrooms and furnished. At £1,495 pcm, it sits well below the Manchester 3-bed cohort median of £2,015 pcm, so it looks cheaper than average for the market.",
+      "pros": [
+        "Below cohort median rent",
+        "Furnished",
+        "Nearest station 0.7mi.",
+        "Nearest school 0.3mi."
+      ],
+      "watchouts": [
+        "Student let",
+        "Check exact condition and layout",
+        "Verify transport and parking"
+      ],
+      "valueVerdict": "Below median, good value",
+      "valueScore": 78
+    },
+    {
+      "id": "otm-19679396",
+      "headline": "Below-median Salford leasehold apartment",
+      "summary": "Two-bedroom, two-bath apartment in Local Blackfriars, Salford, priced at £220,000. That is well below the cohort median asking price of £270,000 for 2-bed sales in Salford, so it looks competitively priced if the condition and service charges are sensible.",
+      "pros": [
+        "246 years remaining on lease",
+        "Resident-only gym",
+        "Cinema room",
+        "Double bedrooms with en-suites"
+      ],
+      "watchouts": [
+        "Leasehold costs and ground rent",
+        "Service charge for amenities",
+        "Check EPC, condition and exact location"
+      ],
+      "valueVerdict": "Below median, strong value",
+      "valueScore": 76
+    },
+    {
+      "id": "otm-19679263",
+      "headline": "5th Floor Leasehold Apartment",
+      "summary": "Two-bedroom, two-bath apartment at Middlewood Locks, Salford, priced at £270,000. This matches the cohort median for 2-bed sales in Salford, so it is priced in line with the local market rather than at a discount or premium.",
+      "pros": [
+        "991 years remaining on lease",
+        "Secure fob entry system",
+        "Video intercom",
+        "Close to bus and train links"
+      ],
+      "watchouts": [
+        "Check service charge and ground rent",
+        "Leasehold terms and restrictions",
+        "5th floor access/lift reliability"
+      ],
+      "valueVerdict": "At cohort median, fair value",
+      "valueScore": 50
+    },
+    {
+      "id": "otm-19683210",
+      "headline": "Four-bed M3 flat at market median",
+      "summary": "Four-bedroom, two-bathroom flat to rent in Dearmans Place, Salford M3, asking £1,500 pcm. That matches the median asking rent for 4-beds in this Salford dataset, so it is priced in line with the cohort rather than below it.",
+      "pros": [
+        "Open to company let (SA)",
+        "Modern high spec finish",
+        "Fully furnished",
+        "2 bathrooms"
+      ],
+      "watchouts": [
+        "Check exact flat size",
+        "Confirm furnishing inventory",
+        "Verify company-let terms"
+      ],
+      "valueVerdict": "At cohort median",
+      "valueScore": 50
+    },
+    {
+      "id": "otm-19682219",
+      "headline": "12th Floor Salford One-Bed Apartment",
+      "summary": "One-bedroom apartment on the 12th floor at Fifty5ive, Salford, offered at £1,300 pcm. This matches the cohort median for 1-bed rents in Salford, so pricing is fair rather than discounted.",
+      "pros": [
+        "Fantastic location",
+        "Resident only amenities",
+        "Great transport links",
+        "12th floor position"
+      ],
+      "watchouts": [
+        "Service charge or amenity access terms",
+        "Noise and lift reliance",
+        "Exact room sizes not stated"
+      ],
+      "valueVerdict": "At median, fair value",
+      "valueScore": 50
+    },
+    {
+      "id": "otm-19651501",
+      "headline": "Central one-bed at median price",
+      "summary": "This is a one-bedroom leasehold apartment in Brook House, Ellesmere Street, M15, priced at £150,000. It sits exactly in line with the Trafford 1-bed median in this dataset, so value is neutral versus the cohort.",
+      "pros": [
+        "One bedroom apartment",
+        "Leasehold",
+        "Central M15 location"
+      ],
+      "watchouts": [
+        "Lease length",
+        "Ground rent/service charges",
+        "Apartment running costs"
+      ],
+      "valueVerdict": "At cohort median, fair value",
+      "valueScore": 50
+    },
+    {
+      "id": "otm-19233215",
+      "headline": "Cheap 1-bed flat in M16",
+      "summary": "A 1-bedroom leasehold flat in Chester Road, Manchester M16, listed at £87,000. That is well below the Trafford 1-bed median asking price of £150,000, so it looks inexpensive versus the cohort.",
+      "pros": [
+        "Leasehold",
+        "Shared private parking",
+        "1 bedroom, 1 bathroom"
+      ],
+      "watchouts": [
+        "Lease length and ground rent",
+        "Service charges",
+        "Parking terms"
+      ],
+      "valueVerdict": "Well below cohort median",
+      "valueScore": 85
+    },
+    {
+      "id": "otm-19375494",
+      "headline": "Chain-free leasehold apartment",
+      "summary": "Two-bedroom, one-bath apartment in Castlefield, Manchester, priced at £220,000. This matches the Trafford 2-bed cohort median, so it sits at a neutral value position versus comparable listings.",
+      "pros": [
+        "Leasehold with 976 years remaining",
+        "Bright third floor position",
+        "Chain-free"
+      ],
+      "watchouts": [
+        "Service charge and ground rent",
+        "Building maintenance costs",
+        "Lease terms and restrictions"
+      ],
+      "valueVerdict": "At cohort median, fair value",
+      "valueScore": 50
+    },
+    {
+      "id": "otm-19682099",
+      "headline": "Furnished 2-bed with concierge",
+      "summary": "Two-bedroom, two-bath apartment on the 2nd floor at One Regent, Manchester, marketed at £1,400 pcm. That is £50 above the Trafford 2-bed median asking rent of £1,350 pcm, so it sits slightly above cohort pricing.",
+      "pros": [
+        "24/7 concierge reception",
+        "Fully furnished",
+        "Great transport links",
+        "Two bathrooms"
+      ],
+      "watchouts": [
+        "Student listing",
+        "Check exact floor/service access",
+        "Confirm bills and tenancy terms"
+      ],
+      "valueVerdict": "Slightly above median, fair",
+      "valueScore": 46
+    },
+    {
+      "id": "otm-19681587",
+      "headline": "Castlefield flat at market rent",
+      "summary": "Two-bedroom, one-bath apartment to rent in Castlefield, Manchester, listed at £1,350 pcm. This matches the Trafford 2-bed cohort median, so it is priced in line with the local dataset rather than offering a discount.",
+      "pros": [
+        "Walking distance to City Centre",
+        "1 parking space included",
+        "Sought after location"
+      ],
+      "watchouts": [
+        "Confirm lease length and tenancy terms",
+        "Check exact Trafford location vs Castlefield address",
+        "Verify parking allocation details"
+      ],
+      "valueVerdict": "At cohort median, fair value",
+      "valueScore": 50
+    },
+    {
+      "id": "otm-19151479",
+      "headline": "Brand New 2-Bed in Trafford",
+      "summary": "A brand new 2-bedroom, 2-bath apartment to rent in Trafford, listed at £1,250 pcm. That is £100 below the dataset median of £1,350 pcm for 2-beds in Trafford, so it sits slightly under the local asking-price benchmark.",
+      "pros": [
+        "Brand new 2 bedroom apartment",
+        "Open plan lounge/kitchen",
+        "Two bathrooms"
+      ],
+      "watchouts": [
+        "Check exact apartment size",
+        "Confirm parking availability",
+        "Verify move-in costs"
+      ],
+      "valueVerdict": "Below median, decent value",
+      "valueScore": 58
+    },
+    {
+      "id": "otm-19643396",
+      "headline": "Modern 1-bed apartment in Trafford",
+      "summary": "One-bedroom apartment to rent at St George's Gardens in Trafford, listed at £1,150 pcm. This matches the median asking rent for 1-beds in the dataset, so it is priced in line with the local cohort.",
+      "pros": [
+        "1-bedroom modern apartment",
+        "Spacious reception room"
+      ],
+      "watchouts": [
+        "No postcode shown",
+        "Check total space and storage",
+        "Confirm service charges or extras"
+      ],
+      "valueVerdict": "Priced at cohort median",
+      "valueScore": 50
+    },
+    {
+      "id": "otm-19148989",
+      "headline": "Stockport terraced house at median price",
+      "summary": "Three-bedroom terraced house in Stockport (SK2) marketed at £274,000, which matches the 3-bed cohort median in this dataset. Leasehold tenure is long at 879 years remaining, and the layout includes a kitchen-diner and separate study.",
+      "pros": [
+        "Kitchen-diner",
+        "Study",
+        "Long leasehold: 879 years remaining"
+      ],
+      "watchouts": [
+        "Leasehold terms and charges",
+        "Need to confirm condition and layout"
+      ],
+      "valueVerdict": "Priced at cohort median",
+      "valueScore": 50
+    },
+    {
+      "id": "otm-19525146",
+      "headline": "Chain-free semi below median price",
+      "summary": "Three-bedroom semi-detached house in Offerton, Stockport SK2, marketed at £250,000. That is below the 3-bed sale median in this dataset of £274,000, so it sits about £24,000 under cohort level.",
+      "pros": [
+        "Chain-free",
+        "Semi-detached home",
+        "Leasehold"
+      ],
+      "watchouts": [
+        "Lease length and ground rent",
+        "Condition and any upgrade cost",
+        "Check local comparables"
+      ],
+      "valueVerdict": "Below cohort median, good value",
+      "valueScore": 64
+    },
+    {
+      "id": "otm-19685387",
+      "headline": "Affordable chain-free Offerton terrace",
+      "summary": "Two-bedroom terraced house in Offerton, Stockport SK2, priced at £195,000. That is well below the £295,000 median asking price for 2-bed sales in this Stockport dataset, so it looks cheap versus the cohort.",
+      "pros": [
+        "Freehold",
+        "Chain-free",
+        "656 sq ft floor area"
+      ],
+      "watchouts": [
+        "Small floor area",
+        "Check condition/repairs",
+        "Confirm running costs"
+      ],
+      "valueVerdict": "Well below median, strong value",
+      "valueScore": 82
+    },
+    {
+      "id": "otm-19685055",
+      "headline": "Two-bed freehold in Hazel Grove",
+      "summary": "Two-bedroom terraced house in Hazel Grove, Stockport, listed at £295,000. That matches the cohort median for 2-bed sales in this dataset, so it is priced in line with the local benchmark.",
+      "pros": [
+        "Freehold tenure",
+        "2 bathrooms",
+        "Compact 678 sq ft layout"
+      ],
+      "watchouts": [
+        "Small floor area",
+        "Terraced house privacy and noise",
+        "Check condition and leasehold-free details"
+      ],
+      "valueVerdict": "At median, fair value",
+      "valueScore": 50
+    },
+    {
+      "id": "otm-19687210",
+      "headline": "Refurbished 3-bed in Hazel Grove",
+      "summary": "Three-bedroom semi-detached house to rent on Clarendon Road, Stockport SK7, marketed at £1,500 pcm. That matches the cohort median for 3-bed rents in Stockport, so it looks fairly priced rather than cheap or expensive.",
+      "pros": [
+        "Refurbished to a high standard",
+        "Three-bedroom semi-detached home"
+      ],
+      "watchouts": [
+        "Only one bathroom",
+        "Check condition of finishes in person",
+        "Confirm parking and outside space"
+      ],
+      "valueVerdict": "At median, fair value",
+      "valueScore": 50
+    },
+    {
+      "id": "otm-19686761",
+      "headline": "Below-median Stockport two-bed terraced",
+      "summary": "Two-bedroom terraced house to rent in Stockport (SK2) at £895 pcm. This is £280 below the cohort median of £1,175 pcm, so it looks competitively priced for the area.",
+      "pros": [
+        "Parking",
+        "Unfurnished",
+        "Two bedrooms",
+        "Terraced house"
+      ],
+      "watchouts": [
+        "Available from 06/07/2026",
+        "Check room sizes",
+        "Confirm parking details"
+      ],
+      "valueVerdict": "Below median, strong value",
+      "valueScore": 78
+    },
+    {
+      "id": "otm-19641528",
+      "headline": "Hazel Grove four-bed terrace",
+      "summary": "Four-bedroom terraced house in Hazel Grove, Stockport, available at £1,900 pcm. That matches the cohort median for 4-bed rent in Stockport, so pricing is in line with the local dataset.",
+      "pros": [
+        "Four double bedrooms",
+        "Three bathrooms",
+        "Mid terraced"
+      ],
+      "watchouts": [
+        "Check parking arrangements",
+        "Confirm garden/outdoor space",
+        "Inspect for terrace noise"
+      ],
+      "valueVerdict": "At cohort median, fair value",
+      "valueScore": 50
+    },
+    {
+      "id": "otm-17342763",
+      "headline": "2-bed furnished flat in SK1",
+      "summary": "Two-bedroom second-floor flat to rent in Stockport, listed at £1,175 pcm. This matches the cohort median for 2-bed rents in Stockport, so it is priced in line with the local dataset.",
+      "pros": [
+        "Available now",
+        "Furnished",
+        "Two bedrooms",
+        "Second floor"
+      ],
+      "watchouts": [
+        "Check lift access",
+        "Confirm heating and bills",
+        "Second-floor access"
+      ],
+      "valueVerdict": "At median, fair value",
+      "valueScore": 50
+    }
+  ],
+  "insights": {
+    "summary": "The strongest value signals are in Trafford and Stockport, where several listings score well above cohort median, especially entry-level homes and 2-bed terraces/flats. Manchester and Salford look more evenly priced overall, with a mix of fair-value stock and a few rental listings offering better-than-average affordability relative to their cohorts.",
+    "trends": [
+      "Manchester apartments are broadly clustered between £130k and £230k, with most scoring around median value; the standout is the 2-bed at £152k, which is rated well below cohort median.",
+      "Trafford shows clear pricing dispersion: a 1-bed flat at £87k is a major outlier on value score, while 2-bed rentals around £1,250-£1,400 pcm sit close to fair value.",
+      "Stockport delivers the strongest buyer value in the sample, with a 2-bed terraced house at £195k and a 2-bed rental at £895 pcm both scoring strongly below median, suggesting good relative affordability.",
+      "Salford’s 2-bed apartments at £220k-£270k are priced around fair to good value, but the market appears less discounted than Trafford or Stockport."
+    ],
+    "standouts": [
+      {
+        "id": "otm-19233215",
+        "reason": "Trafford 1-bed flat at £87k; highest value score in the dataset (85) and a clear low-entry-price anomaly."
+      },
+      {
+        "id": "otm-19685387",
+        "reason": "Stockport 2-bed terraced house at £195k; strong value score (82) and attractive for a first-time buyer or investor."
+      },
+      {
+        "id": "otm-19680055",
+        "reason": "Manchester 2-bed apartment at £152k; rated well below cohort median (79), making it one of the best-priced city-centre apartment options."
+      }
+    ],
+    "generatedAt": "2026-06-10T09:16:41.068Z",
+    "query": "Greater Manchester"
+  }
+}
