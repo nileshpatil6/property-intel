@@ -28,8 +28,7 @@ export function ComparePanel({ items, onClear, onRemove }: {
     <div className="no-print scrollbar-thin fade-up" style={{
       position: "fixed", bottom: 0, left: 0, right: 0, zIndex: 40,
       background: "var(--surface)", borderTop: "1px solid var(--border-2)",
-      borderRadius: "18px 18px 0 0",
-      boxShadow: "0 -10px 40px rgba(20,40,30,0.16)", maxHeight: "62vh", overflowY: "auto",
+      boxShadow: "0 -8px 24px -8px rgba(20,33,61,0.16)", maxHeight: "62vh", overflowY: "auto",
     }}>
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "14px 20px 20px" }}>
         <div style={{ display: "flex", alignItems: "center", marginBottom: 12 }}>

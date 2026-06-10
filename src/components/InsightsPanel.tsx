@@ -9,63 +9,54 @@ export function InsightsPanel({ insights, listings, model }: {
 }) {
   const byId = new Map(listings.map((l) => [l.id, l]));
   return (
-    <div className="insights-print" style={{
-      background: "linear-gradient(150deg, #14213D 0%, #1E3A5F 55%, #182F4D 100%)",
-      borderRadius: 18, padding: "20px 22px", color: "#E8EDF5", position: "relative", overflow: "hidden",
-    }}>
-      {/* glow accent */}
-      <div style={{ position: "absolute", top: -60, right: -40, width: 240, height: 240, borderRadius: "50%",
-        background: "radial-gradient(circle, rgba(80,130,200,0.20), transparent 70%)", pointerEvents: "none" }} />
-
-      <div style={{ display: "flex", alignItems: "center", gap: 9, marginBottom: 13, position: "relative" }}>
-        <span style={{ width: 30, height: 30, borderRadius: 9, background: "rgba(80,130,200,0.18)",
-          display: "flex", alignItems: "center", justifyContent: "center", color: "#7FB0E0" }}>
-          <IconSparkle size={16} />
-        </span>
+    <div className="insights-print card" style={{ padding: "18px 20px" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 9, marginBottom: 12,
+        borderBottom: "1px solid var(--border)", paddingBottom: 12 }}>
+        <IconSparkle size={15} style={{ color: "var(--primary)" }} />
         <div>
-          <div style={{ fontSize: 14, fontWeight: 700, letterSpacing: "-0.01em" }}>AI Market Intelligence</div>
-          <div style={{ fontSize: 11, color: "#8AA0C2" }}>Generated across {listings.length} live listings</div>
+          <div style={{ fontSize: 13.5, fontWeight: 700, letterSpacing: "-0.01em" }}>Market summary</div>
+          <div style={{ fontSize: 11, color: "var(--ink-3)" }}>Generated across {listings.length} listings</div>
         </div>
-        <span style={{ fontSize: 10, color: "#7E94B8", marginLeft: "auto", fontFamily: "ui-monospace, monospace",
-          background: "rgba(255,255,255,0.06)", padding: "3px 8px", borderRadius: 6 }}>{model}</span>
+        <span style={{ fontSize: 10, color: "var(--ink-3)", marginLeft: "auto", fontFamily: "ui-monospace, monospace",
+          background: "var(--surface-2)", padding: "3px 8px", borderRadius: 5, border: "1px solid var(--border)" }}>{model}</span>
       </div>
 
-      <p style={{ fontSize: 13, lineHeight: 1.65, color: "#D6E0EE", marginBottom: 16, position: "relative", maxWidth: 760 }}>
+      <p style={{ fontSize: 13, lineHeight: 1.65, color: "var(--ink-2)", marginBottom: 16, maxWidth: 760 }}>
         {insights.summary}
       </p>
 
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 18, position: "relative" }}>
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24 }}>
         <div>
           <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 9 }}>
-            <IconTrend size={13} style={{ color: "#7FB0E0" }} />
-            <span style={{ fontSize: 10.5, fontWeight: 700, letterSpacing: "0.06em", color: "#8AA0C2", textTransform: "uppercase" }}>Trends</span>
+            <IconTrend size={13} style={{ color: "var(--ink-3)" }} />
+            <span style={{ fontSize: 10.5, fontWeight: 700, letterSpacing: "0.06em", color: "var(--ink-3)", textTransform: "uppercase" }}>Trends</span>
           </div>
           <ul style={{ margin: 0, padding: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: 8 }}>
             {insights.trends.map((t, i) => (
-              <li key={i} style={{ fontSize: 12, lineHeight: 1.5, color: "#D6E0EE", display: "flex", gap: 8 }}>
-                <span style={{ color: "#7FB0E0", flexShrink: 0 }}>•</span>{t}
+              <li key={i} style={{ fontSize: 12, lineHeight: 1.5, color: "var(--ink-2)", display: "flex", gap: 8 }}>
+                <span style={{ color: "var(--ink-3)", flexShrink: 0 }}>—</span>{t}
               </li>
             ))}
           </ul>
         </div>
         <div>
           <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 9 }}>
-            <IconLayers size={13} style={{ color: "#7FB0E0" }} />
-            <span style={{ fontSize: 10.5, fontWeight: 700, letterSpacing: "0.06em", color: "#8AA0C2", textTransform: "uppercase" }}>Standout opportunities</span>
+            <IconLayers size={13} style={{ color: "var(--ink-3)" }} />
+            <span style={{ fontSize: 10.5, fontWeight: 700, letterSpacing: "0.06em", color: "var(--ink-3)", textTransform: "uppercase" }}>Standout opportunities</span>
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
             {insights.standouts.map((s, i) => {
               const l = byId.get(s.id);
               return (
-                <div key={i} style={{ background: "rgba(255,255,255,0.055)", border: "1px solid rgba(255,255,255,0.09)",
-                  borderRadius: 10, padding: "9px 11px" }}>
-                  <div style={{ fontSize: 11.5, fontWeight: 600, color: "#fff", display: "flex", justifyContent: "space-between", gap: 8 }}>
+                <div key={i} style={{ background: "var(--surface-2)", border: "1px solid var(--border)",
+                  borderRadius: 6, padding: "9px 11px" }}>
+                  <div style={{ fontSize: 11.5, fontWeight: 600, color: "var(--ink)", display: "flex", justifyContent: "space-between", gap: 8 }}>
                     <span style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
                       {l ? `${l.propertyType} · ${l.area}` : s.id}
                     </span>
-                    {l && <span style={{ color: "#7FB0E0", flexShrink: 0 }}>£{l.price.toLocaleString()}</span>}
+                    {l && <span style={{ color: "var(--primary)", flexShrink: 0 }}>£{l.price.toLocaleString()}</span>}
                   </div>
-                  <div style={{ fontSize: 11, color: "#A9B8D2", lineHeight: 1.45, marginTop: 3 }}>{s.reason}</div>
+                  <div style={{ fontSize: 11, color: "var(--ink-2)", lineHeight: 1.45, marginTop: 3 }}>{s.reason}</div>
                 </div>
               );
             })}

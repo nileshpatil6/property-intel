@@ -17,8 +17,7 @@ export function SourceBadge({ source, small }: { source: Source; small?: boolean
       display: "inline-flex", alignItems: "center", gap: 5,
       fontSize: small ? 10 : 10.5, fontWeight: 600, letterSpacing: "0.01em",
       color: "#fff", background: SOURCE_COLOR[source],
-      padding: small ? "3px 8px" : "4px 9px", borderRadius: 7, whiteSpace: "nowrap",
-      boxShadow: "0 1px 4px rgba(0,0,0,0.18)",
+      padding: small ? "3px 8px" : "4px 9px", borderRadius: 4, whiteSpace: "nowrap",
     }}>
       {source}
     </span>

@@ -64,25 +64,23 @@ export function Dashboard({ listings, insights, model, sourceStatus }: {
   return (
     <div style={{ minHeight: "100vh", paddingBottom: selectedItems.length ? "64vh" : 48 }}>
       {/* Header */}
-      <header className="no-print" style={{ background: "rgba(251,251,250,0.85)", backdropFilter: "blur(10px)",
+      <header className="no-print" style={{ background: "var(--surface)",
         borderBottom: "1px solid var(--border)", position: "sticky", top: 0, zIndex: 30 }}>
-        <div style={{ maxWidth: 1240, margin: "0 auto", padding: "13px 22px", display: "flex", alignItems: "center", gap: 13 }}>
-          <div style={{ width: 36, height: 36, borderRadius: 10, background: "linear-gradient(135deg, var(--primary), var(--primary-d))",
-            display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontWeight: 800, fontSize: 18,
-            boxShadow: "0 2px 8px rgba(14,110,84,0.3)" }}>P</div>
+        <div style={{ maxWidth: 1240, margin: "0 auto", padding: "14px 22px", display: "flex", alignItems: "center", gap: 13 }}>
+          <div style={{ width: 32, height: 32, borderRadius: 6, border: "1.5px solid var(--primary)",
+            display: "flex", alignItems: "center", justifyContent: "center", color: "var(--primary)", fontWeight: 700, fontSize: 15 }}>P</div>
           <div>
-            <div style={{ fontSize: 17, fontWeight: 700, letterSpacing: "-0.02em" }}>PropIntel</div>
-            <div style={{ fontSize: 11.5, color: "var(--ink-3)" }}>UK property search · unified · AI-ranked</div>
+            <div style={{ fontSize: 16, fontWeight: 700, letterSpacing: "-0.01em" }}>PropIntel</div>
+            <div style={{ fontSize: 11.5, color: "var(--ink-3)" }}>Unified property search · Greater Manchester</div>
           </div>
-          <span style={{ display: "inline-flex", alignItems: "center", gap: 7, marginLeft: 8,
-            fontSize: 11.5, fontWeight: 600, color: "var(--good)", background: "var(--good-bg)",
-            border: "1px solid #C6E8D2", borderRadius: 99, padding: "5px 11px" }}>
-            <span className="pulse-dot" style={{ width: 7, height: 7, borderRadius: "50%", background: "#22C55E" }} />
-            {listings.length} live · scraped {today}
+          <span style={{ display: "inline-flex", alignItems: "center", gap: 6, marginLeft: 8,
+            fontSize: 11.5, fontWeight: 500, color: "var(--ink-2)", border: "1px solid var(--border)",
+            borderRadius: 6, padding: "5px 11px" }}>
+            {listings.length} listings · updated {today}
           </span>
           <button onClick={() => window.print()} style={{ marginLeft: "auto", fontSize: 12.5, fontWeight: 600,
-            color: "var(--primary-d)", background: "var(--primary-l)", border: "1px solid #CDE8DE",
-            borderRadius: 10, padding: "8px 14px", display: "inline-flex", alignItems: "center", gap: 6 }}>
+            color: "var(--primary-d)", background: "var(--surface)", border: "1px solid var(--border-2)",
+            borderRadius: 6, padding: "8px 14px", display: "inline-flex", alignItems: "center", gap: 6 }}>
             <IconDownload size={14} /> Export report
           </button>
         </div>
@@ -91,13 +89,11 @@ export function Dashboard({ listings, insights, model, sourceStatus }: {
       <main style={{ maxWidth: 1240, margin: "0 auto", padding: "22px" }}>
         {/* Hero line */}
         <div className="no-print" style={{ marginBottom: 18 }}>
-          <h1 style={{ fontSize: 25, fontWeight: 700, letterSpacing: "-0.03em", lineHeight: 1.15 }}>
-            One search across <span style={{ color: "var(--zoopla)" }}>Zoopla</span>,{" "}
-            <span style={{ color: "var(--rightmove)" }}>Rightmove</span> &{" "}
-            <span style={{ color: "var(--onthemkt)" }}>OnTheMarket</span>
+          <h1 style={{ fontSize: 22, fontWeight: 700, letterSpacing: "-0.02em", lineHeight: 1.2 }}>
+            Search Zoopla, Rightmove and OnTheMarket in one place
           </h1>
-          <p style={{ fontSize: 14, color: "var(--ink-2)", marginTop: 5 }}>
-            Every listing summarised, value-scored and compared by AI. Greater Manchester.
+          <p style={{ fontSize: 13.5, color: "var(--ink-2)", marginTop: 5 }}>
+            Every listing summarised and value-scored by AI to help you shortlist faster.
           </p>
         </div>
 
@@ -136,13 +132,10 @@ export function Dashboard({ listings, insights, model, sourceStatus }: {
                   title={live ? "Scraping live" : "Behind Cloudflare — enable proxy layer to go live"}
                   style={{
                     display: "inline-flex", alignItems: "center", gap: 6,
-                    fontSize: 12, fontWeight: 600, padding: "5px 12px", borderRadius: 99,
+                    fontSize: 12, fontWeight: 600, padding: "5px 12px", borderRadius: 6,
                     color: on ? "#fff" : "var(--ink-2)", background: on ? SOURCE_COLOR[s] : "var(--surface)",
                     border: `1px solid ${on ? SOURCE_COLOR[s] : "var(--border-2)"}`, transition: "all 0.15s",
                   }}>
-                  <span style={{ width: 6, height: 6, borderRadius: "50%",
-                    background: live ? "#22C55E" : "#F59E0B",
-                    boxShadow: on ? "0 0 0 2px rgba(255,255,255,0.55)" : "none" }} />
                   {s}{!live && <span style={{ fontSize: 9, opacity: 0.85, fontWeight: 700 }}>PROXY</span>}
                 </button>
               );

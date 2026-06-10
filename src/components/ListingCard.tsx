@@ -3,7 +3,7 @@
 import { useState } from "react";
 import type { EnrichedListing } from "@/lib/data";
 import { SourceBadge, ValueScore, PropertyThumb, fmtPrice, Stat } from "./ui";
-import { IconBed, IconBath, IconPin, IconTag, IconSparkle, IconCheck, IconAlert, IconPhone, IconExternal, IconChevron } from "./icons";
+import { IconBed, IconBath, IconPin, IconTag, IconCheck, IconAlert, IconPhone, IconExternal, IconChevron } from "./icons";
 
 export function ListingCard({ l, selected, onToggle }: {
   l: EnrichedListing; selected: boolean; onToggle: (id: string) => void;
@@ -23,25 +23,25 @@ export function ListingCard({ l, selected, onToggle }: {
           <>
             <div style={{ position: "absolute", top: 11, left: 11 }}><SourceBadge source={l.source} /></div>
             <button onClick={() => onToggle(l.id)} title="Add to compare" style={{
-              position: "absolute", top: 11, right: 11, width: 30, height: 30, borderRadius: 9,
+              position: "absolute", top: 11, right: 11, width: 28, height: 28, borderRadius: 6,
               border: "none", background: selected ? "var(--primary)" : "rgba(255,255,255,0.92)",
-              color: selected ? "#fff" : "var(--ink-2)", fontSize: 16, fontWeight: 600,
+              color: selected ? "#fff" : "var(--ink-2)", fontSize: 15, fontWeight: 600,
               display: "flex", alignItems: "center", justifyContent: "center",
-              boxShadow: "0 2px 8px rgba(0,0,0,0.18)", backdropFilter: "blur(6px)",
+              boxShadow: "0 1px 4px rgba(0,0,0,0.18)",
             }}>{selected ? "✓" : "+"}</button>
             {/* price + type on photo */}
             <div style={{ position: "absolute", left: 12, bottom: 10, right: 12, display: "flex",
               alignItems: "flex-end", justifyContent: "space-between" }}>
               <div>
-                <div style={{ fontSize: 22, fontWeight: 700, color: "#fff", letterSpacing: "-0.02em",
+                <div style={{ fontSize: 21, fontWeight: 700, color: "#fff", letterSpacing: "-0.01em",
                   textShadow: "0 1px 8px rgba(0,0,0,0.45)" }}>
                   {fmtPrice(l.price, l.listingType)}
                   {isRent && <span style={{ fontSize: 12.5, fontWeight: 500, opacity: 0.92 }}> pcm</span>}
                 </div>
               </div>
               <span style={{ fontSize: 10.5, fontWeight: 600, color: "#fff", textTransform: "uppercase",
-                letterSpacing: "0.05em", background: isRent ? "rgba(192,65,12,0.92)" : "rgba(14,110,84,0.92)",
-                padding: "3px 8px", borderRadius: 6, backdropFilter: "blur(4px)" }}>
+                letterSpacing: "0.05em", background: isRent ? "rgba(181,83,42,0.92)" : "rgba(30,58,95,0.92)",
+                padding: "3px 8px", borderRadius: 4 }}>
                 {isRent ? "To Let" : "For Sale"}
               </span>
             </div>
@@ -88,15 +88,14 @@ export function ListingCard({ l, selected, onToggle }: {
         </div>
 
         {/* AI summary */}
-        <div style={{ background: "var(--primary-l)", borderRadius: 11, padding: "10px 12px" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 5 }}>
-            <IconSparkle size={13} style={{ color: "var(--primary)" }} />
-            <span style={{ fontSize: 9.5, fontWeight: 700, letterSpacing: "0.07em", color: "var(--primary-d)",
-              textTransform: "uppercase" }}>AI Analysis</span>
-            <span style={{ fontSize: 10.5, fontWeight: 600, color: "var(--primary-d)", marginLeft: "auto",
+        <div style={{ borderLeft: "2px solid var(--primary-l)", paddingLeft: 10 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 4 }}>
+            <span style={{ fontSize: 9.5, fontWeight: 700, letterSpacing: "0.07em", color: "var(--ink-3)",
+              textTransform: "uppercase" }}>Assessment</span>
+            <span style={{ fontSize: 10.5, fontWeight: 600, color: "var(--primary)", marginLeft: "auto",
               textAlign: "right" }}>{l.ai.valueVerdict}</span>
           </div>
-          <p style={{ fontSize: 12.5, lineHeight: 1.55, color: "var(--ink)" }}>{l.ai.summary}</p>
+          <p style={{ fontSize: 12.5, lineHeight: 1.55, color: "var(--ink-2)" }}>{l.ai.summary}</p>
         </div>
 
         <button onClick={() => setOpen(!open)} style={{
